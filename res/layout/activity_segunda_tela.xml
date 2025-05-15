@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SegundaTela">
+
+    <!-- Botão Voltar -->
+
+    <!-- Título -->
+
+    <!-- Texto Selecionar Data -->
+
+    <!-- Horários -->
+
+    <ImageView
+        android:id="@+id/btnVoltar"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:contentDescription="Voltar"
+        android:src="@android:drawable/ic_media_previous"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="371dp"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:text="Agendar Consulta"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <TextView
+        android:id="@+id/txtSelecionarData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="15 Julho, 2025"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="424dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutHoras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSelecionarData">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="09:00" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="11:00" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="15:00" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="19:00" />
+    </LinearLayout>
+
+    <!-- Botão Agendar Consulta -->
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="177dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#B4CFE4"
+        android:padding="12dp"
+        android:text="Agendar Consulta"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="252dp"
+        android:layout_height="162dp"
+
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
